@@ -1,0 +1,32 @@
+footer {
+
+  color: $main;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  margin-top: 15px;
+  padding: 5px;
+
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    align-items: center;
+  }
+
+p {
+    color: $main;
+}
+
+  .container-footer__icons {
+      display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 25px;
+    cursor: pointer;
+  }
+
+  img {
+    width: 100%;
+    margin: 5px;
+  }
+}

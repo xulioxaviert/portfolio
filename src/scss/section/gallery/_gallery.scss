@@ -1,0 +1,32 @@
+.gallery {
+  align-items: center;
+  text-align: center;
+  margin-top: -5px;
+
+  background-color: $main;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  h3 h4 {
+    margin-top: 1rem;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 100%;
+    
+    &__img {
+      width: $size-container-gallery;
+      margin: $margin-gallery;
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+      @include desktop {
+        width: $size-container-gallery-desktop;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

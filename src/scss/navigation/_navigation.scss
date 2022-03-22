@@ -1,0 +1,33 @@
+.navigation {
+ 
+  
+  padding: 2px;
+  @include desktop {
+    padding: 1px;
+  }
+  display: flex;
+  align-items: center;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    &__item:hover {
+      background-color: $main;
+      color: $secondary;
+      border-radius: 5px;
+      padding-left: 1px;
+      padding-right: 1px;
+    }
+
+    &__item {
+      display: flex;
+      margin: 10px 10px;
+      cursor: pointer;
+      font-size: $navigation;
+      @include desktop {
+        font-size: $navigation-desktop;
+      }
+      font-weight: bold;
+    }
+  }
+}

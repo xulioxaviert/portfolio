@@ -1,0 +1,26 @@
+.hero {
+  &__container-subtitle > h1 h2 {
+    font-size: $paragraph;
+    @include desktop {
+      font-size: $paragraph-desktop;
+    }
+  }
+
+  .content-center {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    &__container-subtitle {
+      position: absolute;
+      bottom: 15px;
+      text-align: center;
+      width: 100%;
+      h1, h2 {
+        color: $main;
+      }
+    }
+  }
+}
