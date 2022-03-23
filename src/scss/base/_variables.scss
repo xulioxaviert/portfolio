@@ -1,16 +1,19 @@
 //Color
 $main: #fff3ec;
-$stroke: #2c3e50;
-$highlight: #34495e;
+$stroke: #85857A;
+$highlight: #333333;
 $secondary: #2f3542;
 $tertiary: #9656a1;
-$font-color: #ffa502;
-$font-color2: #2ed573;
+$font-color: #fff3ec;
+$font-color2: #ffa502;
+$font-color3: #BAC95C;
 $main2: #ffa502;
 
 //Sizes
 $title: 32px;
-$title-desktop: 40px;
+$title-desktop: 35px;
+$title-tablet: 28px;
+$title-movil: 20px;
 $subtitle: 25px;
 $subtitle-desktop: 34px;
 $paragraph: 16px;
@@ -19,9 +22,9 @@ $navigation: 20px;
 $navigation-desktop: 30px;
 
 //screen-sizes
-$tablet: 768px;
+$tablet: 680px;
 $desktop: 992px;
-$movil: 480px;
+$movil: 500px;
 
 //border
 $border-size: 5px;

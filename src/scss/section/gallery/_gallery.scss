@@ -1,8 +1,8 @@
 .gallery {
   align-items: center;
   text-align: center;
-  margin-top: -5px;
-
+  margin-top: 0px;
+  width: 100%;
   background-color: $main;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
   h3 h4 {
@@ -11,17 +11,16 @@
 
   &__content {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    align-items: flex-start;
-    height: 100%;
-    
+    align-items: center;
+    width: 75%;
+
     &__img {
-      width: $size-container-gallery;
-      margin: $margin-gallery;
+      width: 100%;
+
       box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
-      @include desktop {
+      @include movil {
         width: $size-container-gallery-desktop;
       }
       img {

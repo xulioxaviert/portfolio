@@ -1,50 +1,37 @@
 .resume {
   margin: 50px 0;
-
   h2,
-  h3 {
+  h3,
+  h4 {
     color: $main;
     text-decoration: underline;
   }
-
+  
   h4 {
-    text-decoration: underline;
+    color: $font-color3;
   }
 
-  h4,
   h5 {
-    margin: 10px 0;
-    font-weight: bold;
-  }
-  p {
-    margin: 5px 0;
+    color: $main;
   }
 
-  .container-resume__education-title h3 {
-    padding-left: 5px;
-  }
+p{
+  color: $stroke;
+}
 
-  .container-resume__experience-title h3 {
-    padding-left: 5px;
-  }
+   .container-resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    width: 100%;
 
-  @include movil {
-    .container-resume {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-
-      .container-resume__education {
-        width: 35%;
-      }
-      .container-resume__experience {
-        width: 35%;
-      }
+    .container-resume__education {
+      width: 35%;
     }
-    .container-resume__title {
-      width: 100%;
-      text-align: center;
-      margin: 5rem 0;
+    .container-resume__experience {
+      width: 35%;
     }
   }
 
@@ -54,20 +41,6 @@
     margin: 2rem 0;
   }
 
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 5px;
-
-  .container-resume {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 60px;
-    width: 100%;
-  }
-
   .container-resume__education {
     width: 100%;
   }
@@ -75,52 +48,21 @@
     width: 100%;
   }
 
-  .container-resume__education-card {
+  
+    .container-resume__education-card {
+    background-color: $highlight;
+    border-radius: 8px;
+    padding: 5px ;
+    margin: 5px;
     margin: 15px 0;
   }
 
-  .container-resume__experience-card {
+    .container-resume__experience-card {
+    background-color: $highlight;
+    border-radius: 8px;
+    padding: 5px ;
+    margin: 5px;
     margin: 15px 0;
   }
 
-  .container-resume__education-card-1 {
-    background-color: $main;
-    border-radius: 8px;
-    padding: 3px;
-    margin: 5px;
-  }
-
-  .container-resume__education-card-2 {
-    background-color: $main;
-    border-radius: 8px;
-    padding: 3px;
-    margin: 5px;
-  }
-
-  .container-resume__education-card-3 {
-    background-color: $main;
-    border-radius: 8px;
-    padding: 3px;
-    margin: 5px;
-  }
-
-  .container-resume__experience-card-1 {
-    background-color: $main;
-    border-radius: 8px;
-    padding: 3px;
-    margin: 5px;
-  }
-
-  .container-resume__experience-card-2 {
-    background-color: $main;
-    border-radius: 8px;
-    padding: 3px;
-    margin: 5px;
-  }
-  .container-resume__experience-card-3 {
-    background-color: $main;
-    border-radius: 8px;
-    padding: 3px;
-    margin: 5px;
-  }
 }
