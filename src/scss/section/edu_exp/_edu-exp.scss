@@ -1,68 +1,92 @@
 .resume {
-  margin: 50px 0;
-  h2,
-  h3,
-  h4 {
-    color: $main;
-    text-decoration: underline;
-  }
-  
-  h4 {
-    color: $font-color3;
-  }
-
-  h5 {
-    color: $main;
-  }
-
-p{
-  color: $stroke;
-}
-
-   .container-resume {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 60px;
-    width: 100%;
-
-    .container-resume__education {
-      width: 35%;
-    }
-    .container-resume__experience {
-      width: 35%;
-    }
-  }
+  margin: 100px 0;
 
   .container-resume__title {
-    width: 100%;
     text-align: center;
-    margin: 2rem 0;
+    color: $main;
+
+    h2 {
+      font-size: $title-desktop;
+    }
   }
 
-  .container-resume__education {
+  .container-resume {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    justify-content: center;
     width: 100%;
-  }
-  .container-resume__experience {
-    width: 100%;
-  }
+    gap: 20px;
 
-  
+    .container-resume__education-title {
+
+      color: $main;
+      font-size: $subtitle-desktop;
+    }
+
+    .container-resume__education {
+      width: 500px;
+      
+
+    }
+
     .container-resume__education-card {
-    background-color: $highlight;
-    border-radius: 8px;
-    padding: 5px ;
-    margin: 5px;
-    margin: 15px 0;
-  }
+      background-color: $highlight;
+      border-radius: 8px;
+      padding: 25px;
+      margin: 20px 0;
+
+      h5 {
+        color: $main;
+        margin: 5px 0;
+      }
+
+      h4 {
+        color: $font-color3;
+        margin: 5px 0;
+      }
+
+      p {
+        color: $stroke;
+      }
+
+    }
+
+    .container-resume__experience-title {
+
+      color: $main;
+      font-size: $subtitle-desktop;
+    }
+
+    .container-resume__experience {
+      width: 500px;
+    }
 
     .container-resume__experience-card {
-    background-color: $highlight;
-    border-radius: 8px;
-    padding: 5px ;
-    margin: 5px;
-    margin: 15px 0;
+      background-color: $highlight;
+      border-radius: 8px;
+      padding: 25px;
+      margin: 20px 0;
+
+      h5 {
+        color: $main;
+        margin: 5px 0;
+      }
+
+      h4 {
+        color: $font-color3;
+        margin: 5px 0;
+      }
+
+      p {
+        color: $stroke;
+      }
+
+    }
+
+
+
   }
+
 
 }
