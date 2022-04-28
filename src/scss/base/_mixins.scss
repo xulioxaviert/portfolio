@@ -9,6 +9,11 @@
     @content;
   }
 }
+@mixin tablet2 {
+  @media screen and (max-width: #{$tablet2}) {
+    @content;
+  }
+}
 
 // @include desktop {
 //   background-color: blue;
@@ -22,6 +27,12 @@
 
 @mixin movil {
   @media screen and (max-width: #{$movil}) {
+    @content;
+  }
+}
+
+@mixin movil2 {
+  @media screen and (max-width: #{$movil2}) {
     @content;
   }
 }

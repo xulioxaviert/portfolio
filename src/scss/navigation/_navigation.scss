@@ -1,71 +1,60 @@
 .navigation {
   width: 100%;
   display: flex;
-  height: 100px;
+  height: 80px;
   align-items: center;
   justify-content: center;
+
   &__list {
     display: flex;
     justify-content: center;
+
     a {
-      padding: 0 25px;
+      padding: 0 20px;
       color: $font-color;
-      font-size: $title-desktop;
+      font-size: $subtitle-desktop;
     }
-    @include tablet {
-      .navigation__list__item {
-        a {
-          font-size: $title-tablet;
-          padding: 0 8px;
-        }
-      }
-    }
-    a:hover {
-      color: $font-color3;
-    }
-  }
-  @include movil {
-    .navigation__list__item {
-      a {
-        font-size: $title-movil;
-        padding: 0 5px;
-        font-size: 18px;
-      }
-    }
-  }
-}
-
-/* 
-.navigation__List__item a {
-    color: $color-font2;
   }
 
-  padding: 2px;
   @include desktop {
-    padding: 1px;
+    a {
+      padding: 0 18px;
+      font-size: $title-tablet;
+    }
   }
-  display: flex;
-  align-items: center;
-  &__list {
-    display: flex;
-    justify-content: space-between;
 
-    &__item:hover {
-      background-color: $main2;
-
-      border-radius: 5px;
-      padding-left: 1px;
-      padding-right: 1px;
+  @include tablet {
+    a {
+      padding: 0 14px;
+      font-size: $subtitle-tablet;
     }
+  }
 
-    &__item {
-      display: flex;
-      margin: 10px 10px;
-      cursor: pointer;
-      font-size: $navigation;
-      @include desktop {
-        font-size: $navigation-desktop;
-      }
-      font-weight: bold;
+  @include tablet2 {
+    a {
+      padding: 0 12px;
+      font-size: 16px;
     }
-  } */
+  }
+
+  @include movil2 {
+    a {
+      padding: 0 6px;
+      font-size: 14px;
+    }
+  }
+
+  @include movil {
+    a {
+      padding: 0 6px;
+      font-size: 12px;
+      
+      
+    }
+  }
+
+  a:hover {
+    color: $font-color3;
+  }
+
+}
