@@ -1,6 +1,6 @@
 .gallery {
   width: 100%;
-  padding: 25px 10px;
+  padding: 25px 20px;
 
 
   .content-center__galerry-subtitle {
@@ -12,18 +12,12 @@
       font-size: $title-desktop;
     }
 
-    h3 {
-      font-size: $subtitle-desktop;
-    }
+   
 
     @include tablet {
 
       h2 {
         font-size: $title-tablet;
-      }
-
-      h3 {
-        font-size: $subtitle-tablet;
       }
 
     }
@@ -35,9 +29,7 @@
         font-size: $title-tablet;
       }
 
-      h3 {
-        font-size: $subtitle-tablet;
-      }
+      
 
     }
 
@@ -49,6 +41,9 @@
     flex-wrap: wrap;
     gap: 15px;
     justify-content: space-around;
+    h3 {
+      color: $stroke;
+    }
   }
 
   &__content-card {
@@ -76,10 +71,7 @@
       padding: 5px 0;
     }
 
-    h3 {
-      padding: 2px 0;
-      color: $main;
-    }
+    
 
     p {
       color: $stroke;
@@ -89,11 +81,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 0 2px;
-      margin: 10px 0;
+      //padding: 2px;
+      margin: 10px 5px;
 
       img {
-        padding: 0 2px;
+        margin: 0 10px;
         width: 10%;
         height: 10%;
       }
