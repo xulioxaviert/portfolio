@@ -20,15 +20,12 @@
     padding: 0 20px;
 
     .container-resume__education-title {
-
       color: $main;
       font-size: $subtitle-desktop;
     }
 
     .container-resume__education {
       width: 500px;
-      
-
     }
 
     .container-resume__education-card {
@@ -36,6 +33,7 @@
       border-radius: 8px;
       padding: 25px;
       margin: 20px 0;
+      height: 300px;
 
       h5 {
         color: $main;
@@ -50,11 +48,9 @@
       p {
         color: $stroke;
       }
-
     }
 
     .container-resume__experience-title {
-
       color: $main;
       font-size: $subtitle-desktop;
     }
@@ -68,7 +64,13 @@
       border-radius: 8px;
       padding: 25px;
       margin: 20px 0;
-
+      height: 300px;
+      &-tools {
+        display: flex;
+        &-content{
+          width: 30%;
+        }
+      }
       h5 {
         color: $main;
         margin: 5px 0;
@@ -82,12 +84,6 @@
       p {
         color: $stroke;
       }
-
     }
-
-
-
   }
-
-
 }
